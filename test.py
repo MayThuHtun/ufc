@@ -20,4 +20,4 @@ class TestZG2UNI(unittest.TestCase):
         self.assertEqual(unicode, result, "Failed converting Myanmar Pangram")
 
 if __name__ == "__main__":
-unittest.main()
+    unittest.main()
