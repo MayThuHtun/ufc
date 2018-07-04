@@ -61,16 +61,6 @@ def convert(input):
     output = output.replace(u'\u1095', u'\u1037')
 
     #############
-    output = re.sub(u'(\u1031)([\u1000-\u1021])([\u1000-\u1021])', r'\2\1\3', output)
-    #  con-thawathtoe-con
-    output = re.sub(u'(\u1031)([\u1000-\u1021])([\u103B\u103C\u103D\u103E])', r'\2\3\1', output)
-    #  con-medials-thwayhtoe
-    output = re.sub(u'(\u1031)([\u1000-\u1021])([\u1036\u1037\u1038])', r'\2\1\3', output)
-    #  con-thawayhtoe-ttt,outkamyint,:
-    output = re.sub(u'(\u1031)([\u1000-\u1021])([\u102B\u102C])', r'\2\1\3', output)
-    #  con-thawayhtoe-yaychar
-    output = re.sub(u'(\u1031)([\u1000-\u1021])([\u103C])', r'\3\2\1', output)
-
 
     ########
 
@@ -167,14 +157,8 @@ def convert(input):
 
     ##########Pattern
 
-    output = re.sub(u'(\u103C)([\u1000-\u1021])(\u1039[\u1000-\u1021])?', r'\2\3\1', output)
-    #  yayit
-    output = re.sub(u'([\u103B\u103C])(\u103D)(\u103E)', r'\1\2\3', output)
-    #  pin-yit-swe-htoe
-    output = re.sub(u'([\u103B\u103C])(\u103E)', r'\1\2', output)
-    #  pin-yit-htoe
-    output = re.sub(u'([\u103B\u103C])(\u103D)', u"\\1\\2", output)
-    #  pin-yit-swe
 
+    ######
+    output = re.sub(u'((?:\u1031)?)((?:\u103C)?)([\u1000-\u1021])((?:\u103B)?)((?:\u103D)?)((?:\u103E)?)((?:\u1037)?)((?:\u102C)?)', r'\3\2\4\5\6\1\7\8', output)
 
     return output
