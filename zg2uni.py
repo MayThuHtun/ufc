@@ -97,6 +97,7 @@ def convert(input):
     output = re.sub(u'\u104E', u'\u104E\u1004\u103A\u1038', output)
     #  la-gaung
 
+
     ##########pat
 
     output = re.sub(u'\u1060', u"\u1039\u1000", output)
@@ -151,9 +152,9 @@ def convert(input):
     output = re.sub(u'\u1097', u'\u100B\u1039\u100B', output)
     #  tatalin
     output = re.sub(u'\u106F', u'\u100E\u1039\u100D', output)
-    #  dayinkaut
-    output = re.sub(u'\u106E', u'\u100D\u1039\u100D', output)
     #  dayin-hmote
+    output = re.sub(u'\u106E', u'\u100D\u1039\u100D', output)
+    #  dayinkaut
 
     ##########Pattern
 
