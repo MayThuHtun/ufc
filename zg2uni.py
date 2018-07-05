@@ -151,7 +151,7 @@ def convert(input):
     #  htawombae-ayit
     output = re.sub(u'\u1097', u'\u100B\u1039\u100B', output)
     #  tatalin
-    output = re.sub(u'\u106F', u'\u100E\u1039\u100D', output)
+    output = re.sub(u'\u106F', u'\u100D\u1039\u100E', output)
     #  dayin-hmote
     output = re.sub(u'\u106E', u'\u100D\u1039\u100D', output)
     #  dayinkaut

@@ -15,6 +15,5 @@ class TestZG2UNI(unittest.TestCase):
         result = zg2uni.convert(zawgyi)
         self.assertEqual(unicode, result, "Failed converting Article One")
 
-
 if __name__ == "__main__":
     unittest.main()
