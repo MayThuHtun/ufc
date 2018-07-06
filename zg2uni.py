@@ -98,7 +98,7 @@ def convert(input):
     #  la-gaung
 
 
-    ##########pat
+    ##########  patsint
 
     output = re.sub(u'\u1060', u"\u1039\u1000", output)
     #  ka
@@ -158,8 +158,6 @@ def convert(input):
 
     ##########Pattern
 
-
-    ######
     output = re.sub(u'((?:\u1031)?)((?:\u103C)?)([\u1000-\u1021])((?:\u103B)?)((?:\u103D)?)((?:\u103E)?)((?:\u1037)?)((?:\u102C)?)', r'\3\2\4\5\6\1\7\8', output)
 
     return output

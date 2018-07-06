@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="48071f42-3028-44a6-9086-1083cb569b25" name="Default Changelist" comment="fixed yayint">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni2zg.py" beforeDir="false" afterPath="$PROJECT_DIR$/uni2zg.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zg2uni.py" beforeDir="false" afterPath="$PROJECT_DIR$/zg2uni.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,39 +49,42 @@
     <session id="607267818">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="png" value="1" />
-          <entry key="py" value="1" />
-          <entry key="txt" value="1" />
+          <entry key="png" value="3" />
+          <entry key="py" value="7" />
+          <entry key="txt" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Image" value="1" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="1" />
+          <entry key="Image" value="3" />
+          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="Python" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="150" />
+          <entry key="py" value="880" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="150" />
+          <entry key="Python" value="880" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="234">
+              <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-end-line="25" />
+              <folding>
+                <element signature="e#122#135#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zg2uni.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="76">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
@@ -93,8 +101,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="9" column="74" selection-start-line="9" selection-start-column="74" selection-end-line="9" selection-end-column="74" />
+            <state relative-caret-position="255">
+              <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
               <folding>
                 <element signature="e#24#39#0" expanded="true" />
               </folding>
@@ -105,8 +113,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/UDHR-UNI.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
+            <state relative-caret-position="833">
               <caret line="49" column="134" selection-start-line="49" selection-start-column="134" selection-end-line="49" selection-end-column="134" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/uni2zg.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="392">
+              <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -114,17 +131,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/UDHR-ZG.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
+            <state relative-caret-position="833">
               <caret line="49" column="128" selection-start-line="49" selection-start-column="128" selection-end-line="49" selection-end-column="128" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/output.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-820">
-              <caret line="49" column="133" selection-start-line="49" selection-start-column="133" selection-end-line="49" selection-end-column="133" />
             </state>
           </provider>
         </entry>
@@ -137,20 +145,21 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/resources/zg.txt" />
         <option value="$PROJECT_DIR$/resources/UDHR-UNI.txt" />
         <option value="$PROJECT_DIR$/output.txt" />
         <option value="$PROJECT_DIR$/resources/UDHR-ZG.txt" />
-        <option value="$PROJECT_DIR$/zg2uni.py" />
         <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/zg2uni.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/uni2zg.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="8" />
-    <option name="y" value="3" />
-    <option name="width" value="718" />
+    <option name="x" value="388" />
+    <option name="y" value="57" />
+    <option name="width" value="904" />
     <option name="height" value="732" />
   </component>
   <component name="ProjectView">
@@ -182,7 +191,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/ufc1" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -226,7 +235,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12593144" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12444113" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -275,8 +284,6 @@
     <entry file="file://$PROJECT_DIR$/new.py" />
     <entry file="file://$PROJECT_DIR$/resources/output.txt" />
     <entry file="file://$PROJECT_DIR$/new.txt" />
-    <entry file="file://$PROJECT_DIR$/a.txt" />
-    <entry file="file://$PROJECT_DIR$/b.txt" />
     <entry file="file://$PROJECT_DIR$/c.txt" />
     <entry file="file://$PROJECT_DIR$/d.txt" />
     <entry file="file://$PROJECT_DIR$/resources/zg.txt" />
@@ -313,13 +320,6 @@
     <entry file="file://$PROJECT_DIR$/result3.txt" />
     <entry file="file://$PROJECT_DIR$/result4.txt" />
     <entry file="file://$PROJECT_DIR$/output4.txt" />
-    <entry file="file://$PROJECT_DIR$/result5.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="89" selection-start-line="19" selection-start-column="89" selection-end-line="19" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/result6.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -333,54 +333,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/Unicode_character_map_(color).png.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/result5.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="89" selection-start-line="19" selection-start-column="89" selection-end-line="19" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="49" column="133" selection-start-line="49" selection-start-column="133" selection-end-line="49" selection-end-column="133" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/Zawgyi_character_map_(color).png.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/UDHR-ZG.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="49" column="128" selection-start-line="49" selection-start-column="128" selection-end-line="49" selection-end-column="128" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/resources/Unicode_character_map_(color).png.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/UDHR-UNI.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
+        <state relative-caret-position="833">
           <caret line="49" column="134" selection-start-line="49" selection-start-column="134" selection-end-line="49" selection-end-column="134" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/a.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="1666">
+          <caret line="98" selection-start-line="98" selection-end-line="98" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/UDHR-ZG.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="49" column="128" selection-start-line="49" selection-start-column="128" selection-end-line="49" selection-end-column="128" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/zg2uni.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="76">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="9" column="74" selection-start-line="9" selection-start-column="74" selection-end-line="9" selection-end-column="74" />
+        <state relative-caret-position="255">
+          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
           <folding>
             <element signature="e#24#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/output.txt">
+    <entry file="file://$PROJECT_DIR$/uni2zg.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-820">
-          <caret line="49" column="133" selection-start-line="49" selection-start-column="133" selection-end-line="49" selection-end-column="133" />
+        <state relative-caret-position="392">
+          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-end-line="25" />
+          <folding>
+            <element signature="e#122#135#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
