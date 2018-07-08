@@ -2,8 +2,9 @@
 import re
 
 
-def convert(input):
+def replace(input):
     output = input
+
     #  nyalay
     output = output.replace(u'\u106A', u'\u1009')
 
@@ -53,14 +54,25 @@ def convert(input):
     #  athat
     output = output.replace(u'\u1039', u'\u103A')
 
-    #  thagyi
-    output = output.replace(u'\u1086', u'\u103F')
-
     #  outkamyint
     output = output.replace(u'\u1094', u'\u1037')
     output = output.replace(u'\u1095', u'\u1037')
 
-    #############
+    #  thagyi
+    output = output.replace(u'\u1086', u'\u103F')
+
+    output = re.sub('\u1064', u'\u1004\u103A\u1039', output)
+    #  up-ngathat
+
+    output = re.sub(u'\u104E', u'\u104E\u1004\u103A\u1038', output)
+    #  la-gaung
+
+    return output
+
+
+def decompose(input):
+
+    output = input
 
     ########
 
@@ -90,13 +102,6 @@ def convert(input):
 
     output = re.sub(u'\u108B', u'\u1004' + u'\u103A' + u'\u1039' + u'\u1036', output)
     #  ngathat-ttt
-
-    output = re.sub('\u1064', u'\u1004\u103A\u1039', output)
-    #  up-ngathat
-
-    output = re.sub(u'\u104E', u'\u104E\u1004\u103A\u1038', output)
-    #  la-gaung
-
 
     ##########  patsint
 
@@ -144,6 +149,7 @@ def convert(input):
     #  la
     output = re.sub(u'\u106D', u'\u1039\u100C', output)
     #  hta-won-bae
+
     ##########
     output = re.sub(u'\u1091', u'\u100F\u1039\u100D', output)
     #  ganda
@@ -156,8 +162,25 @@ def convert(input):
     output = re.sub(u'\u106E', u'\u100D\u1039\u100D', output)
     #  dayinkaut
 
+    return output
+
+
+def visual2logical(input):
     ##########Pattern
 
-    output = re.sub(u'((?:\u1031)?)((?:\u103C)?)([\u1000-\u1021])((?:\u103B)?)((?:\u103D)?)((?:\u103E)?)((?:\u1037)?)((?:\u102C)?)', r'\3\2\4\5\6\1\7\8', output)
+    output = input
+
+    output = re.sub(
+        u'((?:\u1031)?)((?:\u103C)?)([\u1000-\u1021])((?:\u103B)?)((?:\u103D)?)((?:\u103E)?)((?:\u1037)?)((?:\u102C)?)',
+        r'\3\2\4\5\6\1\7\8', output)
+
+    return output
+
+
+def convert(input):
+    output = input
+    output = replace(output)
+    output = decompose(output)
+    output = visual2logical(output)
 
     return output
