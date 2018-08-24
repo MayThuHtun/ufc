@@ -2,7 +2,7 @@
 First convert all Zawgyi code points to Unicode code points.
 
 # Conversion Step Two
-Second convert all Unicode code points to Zawgyi code points.
+Second convert all Unicode points to Zawgyi code points.
 
 # Conversion Step Three
 Three convert all Win-Innwa code points to Unicode points.
