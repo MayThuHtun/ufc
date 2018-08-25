@@ -2,7 +2,8 @@
 import re
 
 
-def convert(input):
+def replace(input):
+    output = input
     output = input
     output = output.replace(u'\u004F', u'\u1025')  # u
     output = output.replace(u'\u00CD', u'\u1009')  # nya-lay
@@ -21,6 +22,7 @@ def convert(input):
     output = output.replace(u'\u00F1', u'\u100A')
     output = output.replace(u'\u0023', u'\u100B')  # ta-ta-lin
     output = output.replace(u'\u0058', u'\u100C')  # hta-won-bae
+    output = output.replace(u'\u007C', u'\u100B\u1039\u100C')  # hta-won-bae-ayit
     output = output.replace(u'\u0021', u'\u100D')  # da-yin-kaut
     output = output.replace(u'\u00A1', u'\u100E')  # da-yin-mote
     output = output.replace(u'\u0050', u'\u100F')  # na-gyi
@@ -39,10 +41,9 @@ def convert(input):
     output = output.replace(u'\u0026', u'\u101B')  # ya-kaut
     output = output.replace(u'\u00BD', u'\u101B')
     output = output.replace(u'\u0076', u'\u101C')  # la
-    #  wa
-    output = output.replace(u'\u0030', u'\u1040')
     output = output.replace(u'\u0030', u'\u101D')
     output = output.replace(u'\u1040', u'\u101D')
+    output = output.replace(u'\u0030', u'\u1040')  # wa
 
     output = output.replace(u'\u006F', u'\u101E')  # tha
     output = output.replace(u'\u005B', u'\u101F')  # ha
@@ -97,18 +98,24 @@ def convert(input):
     output = output.replace(u'\u004E', u'\u103C')
     output = output.replace(u'\u0060', u'\u103C')
     output = output.replace(u'\u006A', u'\u103C')
-    output = output.replace(u'\u0078', u'\u103C')
+    output = output.replace(u'\u007E', u'\u103C')
     output = output.replace(u'\u0047', u'\u103D')  # wa-swe
     output = output.replace(u'\u0053', u'\u103E')  # ha-htoe
+    output = output.replace(u'\u00A7', u'\u103E')
 
-    output = re.sub(u'\u0070\u0073', u'\u1008', output)
-    output = re.sub(u'\u1005\u103B', u'\u1008', output)  # za-myin-zwe
+    return output
 
+
+def decompose(input):
+    output = input
     # ##########
     output = re.sub(u'([\u1000-\u1021])\u0046', u'\u0046\\1', output)  # up-ngathat
     output = re.sub(u'([\u1000-\u1021])\u00D0', u'\u0046\\1\u102E', output)  # with-lgtsk
     output = re.sub(u'([\u1000-\u1021])\u00D8', u'\u0046\\1\u102D', output)  # with-lgt
     output = re.sub(u'([\u1000-\u1021])\u00F8', u'\u0046\\1\u1036', output)  # with-ttt
+
+    output = re.sub(u'\u0070\u0073', u'\u1008', output)
+    output = re.sub(u'\u1005\u103B', u'\u1008', output)  # za-myin-zwe
 
     output = re.sub('\u0046', u'\u1004\u103A\u1039', output)  # up-ngathat
 
@@ -123,7 +130,7 @@ def convert(input):
     output = re.sub(u'\u0051', u'\u103B' + u'\u103E', output)  # yapit-hatoe
     output = re.sub(u'\u0052', u'\u103B' + u'\u103D', output)  # yapit-waswe
     output = re.sub(u'\u0057', u'\u103B' + u'\u103D' + u'\u103E', output)  # yapit-waswe-hatoe
-    output = re.sub(u'[\u003C\u003E]', u'\u103B' + u'\u103D', output)  # yayit-waswe
+    output = re.sub(u'[\u003C\u003E]', u'\u103C' + u'\u103D', output)  # yayit-waswe
     output = re.sub(u'\u00FB', u'\u103C' + u'\u102F', output)  # yayit-1chaung
 
     output = re.sub(u'\u00D3', u'\u1009\u102C', output)  # nya-lay+yaychar
@@ -144,7 +151,7 @@ def convert(input):
     output = re.sub(u'\u00D1', u'\u1039\u1008', output)  # za-zwe
     output = re.sub(u'\u00B3', u'\u1039\u100B', output)  # tatalin
     output = re.sub(u'\u00B2', u'\u1039\u100C', output)  # hta-won-bae
-    output = re.sub(u'\u00A2', u'\u1039\u100F', output)  # ns-gyi
+    output = re.sub(u'\u0050', u'\u1039\u100F', output)  # na-gyi
     output = re.sub(u'[\u00C5\u00E5]', u'\u1039\u1010', output)  # ta
     output = re.sub(u'[\u00A6\u00AC]', u'\u1039\u1011', output)  # hta
     output = re.sub(u'\u00B4', u'\u1039\u1012', output)  # da-dwe
@@ -158,18 +165,30 @@ def convert(input):
     output = re.sub(u'\u2019', u'\u1039\u101C', output)  # la
     output = re.sub(u'\u00C9', u'\u1039\u1010\u103D', output)  # ta-wa-swe
 
-
     #  ####
 
-    output = re.sub(u'\u0040', u'\u1091', output)  # gan-da
+    output = re.sub(u'\u0040', u'\u100F\u1039\u100D', output)  # gan-da
     output = re.sub(u'\u00A5', u'\u100B\u1039\u100B', output)  # double-tatalin-jake
     output = re.sub(u'\u00B9', u'\u100D\u1039\u100E', output)  # da-yin-mode+kaut
     output = re.sub(u'\u00D7', u'\u100D\u1039\u100D', output)  # double-da-yin-kaut
+    return output
 
 
+def visual2logical(input):
+    output = input
     # ###pattern
     output = re.sub(
         u'((?:\u1031)?)((?:\u103C)?)([\u1000-\u1021])((?:\u103B)?)((?:\u103D)?)((?:\u103E)?)((?:\u1037)?)((?:\u102C)?)',
         r'\3\2\4\5\6\1\7\8', output)
+
+    return output
+
+
+def convert(input):
+    output = input
+
+    output = replace(output)
+    output = decompose(output)
+    output = visual2logical(output)
 
     return output
