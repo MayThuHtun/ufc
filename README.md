@@ -51,15 +51,15 @@ List of Tables
 	2.2		Software Selection
 	2.3		Project Plan
 		
-	CHAPTER 4	 CONCLUSION
-	4.1		Conclusion
-	4.2		Advantages of the project
-	4.3		Disadvantages of the project
-	4.4		Limitations 
+	CHAPTER 3	 CONCLUSION
+	3.1		Conclusion
+	3.2		Advantages of the project
+	3.3		Disadvantages of the project
+	3.4		Limitations 
 	References
 
 			
-										Abstract
+														Abstract
 
 	The project can be presented about a converter to translate some Myanmar language fonts. Myanmar Language tool’s goal is to develop a useful converter for translating texts between Myanmar languages in real time with high quality. Myanmar Language converter is a type of link that upload on website. In coding, we had used Python language to convert Zawgyi, Unicode and WinMyanmar vice visa.
 	To form our converter design, we had taken some templates such as Materialize, MDL and Bootstrap. And then, we developed the associate coding for our project.  Our converter’s coding and design were merged into a good converter link. We uploaded it on the website.
@@ -67,7 +67,7 @@ List of Tables
 Converter link =>	https://geo-gold-converter.herokuapp.com
 
 
-							ACKNOWLWDGEMENT
+					ACKNOWLWDGEMENT
 
 We would like to acknowledge and thank all of my teachers that have assisted our project at University of Computer Studies (Mandalay). This project could not have been completed without their assistance.
 	First, we would like to express my heartfelt thanks to U Kyaw Zwa Soe, Rector of the at University of Computer Studies (Mandalay) for him guidance and for him permission to submit our project.
@@ -78,17 +78,17 @@ Then also thanks to U Ravi Chhabra, CEO of Geo Mandalar Co,..ltd for his trust t
 	Finally, we would like to express our gratitude to all people who helped us to achieve this project.
 
 
-								DECLARATION
+						DECLARATION
 
 We declare that this project report or part of it was not a copy of a document done by any organization, university any other institute or a previous student project group at University of Computer Studies (Mandalay) and was not copied from the Internet or other sources. We understand that Plagiarism is an academic offence and if we found that to have committed or abetted the offence of plagiarism in relation to this submitted work, disciplinary action will be enforced.
 
 **Project Details**
 Project Title	 Myanmar Language Tools
-Project ID		Geo Mandalar internship program
+Project ID	Geo Mandalar internship program
 
 
-							CHAPTER 1
-							INTRODUCTION
+						CHAPTER 1
+						INTRODUCTION
 
 1.1	Introduction
 
@@ -227,17 +227,17 @@ Hardware Requirement
 In understanding the system requirements and testing some features, we work together. Developer, UI/UX, testing and documentation, we work together. In this system, how to use converter for user and to solve the difficulties of any devices users, especially for android users who have not fonts with their device
 
 
-							CHAPTER 4
+							CHAPTER 3
 							CONCLUSION
 
-4.1	Conclusion
+3.1	Conclusion
 
 	The system provides simple and complete functions for user without necessarily changes. Beyond our purpose, you can choose the fonts that would you like to change. One touch of our fingers on click the convert button which show the font do our desire’s view. This converter helps both Zawgyi font users and Unicode font users. 
 	The converter can convert target fonts easily whenever the user found difficulties within Myanmar fonts. Today, Unicode is the most widely used in Myanmar so other fonts users should use this converter. The users who know converter’s link, they can use it everywhere, every time which you want. 
 
 	
 
-4.2	Advantages of the project
+3.2	Advantages of the project
 
 The proposed converter offers the following advantages: 
 
@@ -250,11 +250,11 @@ The proposed converter offers the following advantages:
 •	Users are comfortable by using this converter link.
 
 
-4.3		Disadvantages of the project
+3.3		Disadvantages of the project
 
 •	Although it can’t be used as worldwide, it can be used as stand-alone. 
 
-4.4		Limitations 
+3.4		Limitations 
 
 •	If you don’t know the exactly link you cannot use the converter.
 
@@ -294,4 +294,4 @@ UDHR-WIN.TXT
 
 
 
-ment# New Document
+
